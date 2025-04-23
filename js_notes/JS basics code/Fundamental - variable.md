@@ -1,3 +1,9 @@
+Statements can take multiple lines
+
+```
+//basic tesing
+console.log(x)
+```
 
 ## 1. Variables & function
 
@@ -80,18 +86,39 @@ for(let item of items) { console.log(item); }
 ![[JavaScript-data-types.svg]]
 
 **Note:** JavaScript is a dynamically typed language.
+There are 8 basic types.
+Declaration are done either by $var$ or $let$.
+```
+var - function-scoped
+let - block-scoped
+```
+
+**Constants** 
+Variable don't have types, only value has type.
+
+**Keyword - typeof** for checking the type
 
 
-Undefined - Not initialized variable.
-Null - It is defined/initialized but it not holds null.
-number - Real / Floating point integers  (**NaN**)
+1. **Undefined** - Not initialized variable.
+2. **Null** - It is defined/initialized but it does not holds null.
+3. number - Real / Floating point integers  (**NaN**, infinity)
 ```
 console.log(Number.MAX_VALUE); // 1.7976931348623157e+308 console.log(Number.MIN_VALUE); // 5e-324
 console.log('a'/2); // NaN; - Special type of number for holding Not a number
 ```
-String - `'content' or "content"`
 
-boolean -
+
+different ways of defining numbers
+```
+let hex = 0x2A // 0x at the start
+let binary = 0b1010 / 0b
+let octal = 0o76// 0o
+let sixtyMillion = 6e7
+```
+
+4. String - `'content' or "content"`
+
+5. boolean -
 
 ```
 let inProgress = true; 
@@ -99,18 +126,18 @@ let completed = false;
 console.log(typeof completed); // boolean
 ```
 
-Symbol - a function
+6. Symbol - a function
 ```
 let s1 = Symbol();
 console.log(Symbol() == Symbol()); // false
 ```
 
-BigInt - whole number larger than 2^53 – 1 and notice n at the end.
+7. BigInt - whole number larger than 2^53 – 1 and notice n at the end.
 ```
 let pageView = 9007199254740991n; console.log(typeof(pageView)); // 'bigint'
 ```
 
-object type - Collection of properties(key-val)
+8. object type - Collection of properties(key-val)
 
 ```
 let person = { firstName: 'John', lastName: 'Doe' };
@@ -121,3 +148,28 @@ To access a object’s property, you can use
 
 - The dot notation (`.`)
 - The array-like notation (`[]`).
+-------------------------
+Notes:
+1. Backtick String Allows us to utilize variables inside the string
+```
+let backtickstring = `Hello ${name}`
+```
+2. String Properties
+```
+mystring.length
+mystring.charAt(0)
+mystring.toUpperCase()
+mystring.toLowerCase()
+```
+
+3. Escape characters
+```
+\"
+\\
+\n
+```
+4. Concatenate the string
+```
+'x'+5
+Note: Left to 5 operations
+```

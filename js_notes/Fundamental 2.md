@@ -10,7 +10,10 @@ let val = 0o1234_5670;
 // hex 
 let message = 0xD0_E0_F0;
 ```
+[[example]]
 
+Example
+```
 ## 2 .Octal and binary
 
 
